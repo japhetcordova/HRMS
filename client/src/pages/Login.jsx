@@ -11,6 +11,7 @@ const Login = () => {
         try{
             const response = await axios.post("http://localhost:5000/api/auth/login", {email, password});
             console.log(response);
+            alert("okay");
         }
         catch(err){
             console.error(err);
@@ -61,7 +62,7 @@ const Login = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-black/60 text-white rounded-md py-2 font-light hover:bg-black/70 transition tracking-widest"
+                        className="w-full bg-black/60 hover:bg-black/90 transition text-white rounded-md py-2 font-light tracking-widest"
                     >
                         Login
                     </button>
