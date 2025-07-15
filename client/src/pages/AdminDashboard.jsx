@@ -5,5 +5,4 @@ const AdminDashboard = () =>{
         </h1>
     )
 }
-console
 export default AdminDashboard;
