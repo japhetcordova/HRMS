@@ -52,7 +52,9 @@ const Login = () => {
                         <input
                             id="password"
                             type="password"
+                            value={password}
                             placeholder="••••••••"
+                            required
                             className="border border-white/30 rounded-md px-3 py-2 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
                             onChange={(e) => setPassword(e.target.value)}
                         />
