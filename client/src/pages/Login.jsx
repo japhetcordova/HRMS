@@ -73,6 +73,7 @@ const Login = () => {
                 <img
                     src="/logo.svg"
                     alt="Logo"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     className="relative z-10 w-45 h-45 object-contain"
                 />
                 <h1 className="relative z-10 text-3xl md:text-5xl font-bold">
