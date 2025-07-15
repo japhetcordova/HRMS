@@ -33,13 +33,17 @@ const Login = () => {
                         <label htmlFor="email" className="text-sm font-medium text-gray-200">
                             Email
                         </label>
+
                         <input
                             id="email"
                             type="email"
+                            value={email}
                             placeholder="example@example.com"
+                            required
                             className="border border-white/30 rounded-md px-3 py-2 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
                             onChange={(e) => setEmail(e.target.value)}
                         />
+
                     </div>
                     <div className="flex flex-col space-y-1">
                         <label htmlFor="password" className="text-sm font-medium text-gray-200">
